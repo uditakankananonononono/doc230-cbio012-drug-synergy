@@ -1,0 +1,7 @@
+# AUDIT PREREG - 012 (written before the audit ran)
+The original result is a NEGATIVE (cold-pair gene-feature gain -0.037; gate +0.01 missed). The audit asks whether that negative is solid or an artifact of the model choice or of noise, so the hypothesis is not dismissed on thin evidence. Data: DeepSynergy labels re-fetched (SHA256 re-verified), Hetionet re-fetched; features and splits as src/run.py (executed from it): 156 drug pairs among 24 mapped drugs, 6,084 rows, cold-pair 5-fold, seeds 0-2.
+Q1 Uncertainty: pair-level cluster bootstrap (200 resamples of the 156 pairs) of the cold-pair gain (HGB identity+gene minus HGB identity), using seed-averaged out-of-fold predictions. Report the 95% interval.
+Q2 Simpler model: logistic regression (C=1) on identity versus identity + standardized non-SVD gene features (overlap 3, network links 2, pathway Jaccard 1; 6 features), cold-pair, same bootstrap. The 16-dim SVD block may be what overfits the HGB; this removes it.
+Q3 Gene features alone (no identity): HGB cold-pair AUROC with bootstrap interval, to see if the gene-relationship features contain any signal by themselves.
+Pre-specified reading: the negative is "solid" if the Q1 and Q2 95% intervals for gain are both entirely below +0.01. It is "underpowered / model-dependent" if either interval includes +0.01 or a positive gain with interval excluding 0. Q3: signal alone if AUROC lower interval bound > 0.5.
+Original gates are not re-fit; any verdict change is written to README/RESULTS.
