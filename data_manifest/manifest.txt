@@ -1,0 +1,2 @@
+4ef40678fff51faa84fa4de63344c5b51e2e4abe7c28a417af24ec2b50fa135a  labels.csv
+labels: http://www.bioinf.jku.at/software/DeepSynergy/labels.csv (O'Neil 2016 Merck screen as distributed with DeepSynergy, Preuer 2018). Targets: Hetionet v1.0 CbG (hashes of Hetionet files in the cbio037 repo manifest). Mapping: drug name = Hetionet compound name (lowercase), plus 5-FU->fluorouracil, MITOMYCINE->mitomycin, ZOLINZA->vorinostat, SN-38->irinotecan (prodrug proxy, flagged).
