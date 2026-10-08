@@ -1,0 +1,177 @@
+d2 {'auroc_identity': 0.8227, 'auroc_with_gene': 0.8364, 'gain': 0.0137}
+d3 {'auroc_identity': 0.7622, 'auroc_with_gene': 0.7255, 'gain': -0.0366}
+d4 {'auroc_identity': 0.7907, 'auroc_with_gene': 0.8041, 'gain': 0.0134}
+d5 {'n_drugs': 24, 'mean_auroc_identity': 0.7489, 'mean_auroc_with_gene': 0.7062, 'mean_gain': -0.0428, 'drugs_with_gain': 4}
+d6 {'overlap': -0.0347, 'links': -0.0239, 'pathway': -0.0207, 'svd': -0.0099}
+d7 {'auroc_identity': 0.7622, 'auroc_with_gene': 0.6928, 'gain': -0.0694}
+{
+ "d1": {
+  "n_rows_all": 23052,
+  "n_drugs": 38,
+  "n_mapped": 24,
+  "unmapped": [
+   "ABT-888",
+   "AZD1775",
+   "BEZ-235",
+   "DINACICLIB",
+   "GELDANAMYCIN",
+   "L778123",
+   "MK-2206",
+   "MK-4541",
+   "MK-4827",
+   "MK-5108",
+   "MK-8669",
+   "MK-8776",
+   "MRK-003",
+   "PD325901"
+  ],
+  "n_rows_both_mapped": 6084,
+  "n_pairs": 156,
+  "n_cells": 39,
+  "pos_rate": 0.263,
+  "SN38_proxy": "irinotecan"
+ },
+ "d2_B1_LR_identity_cold_pair_auroc": 0.7463,
+ "d2_random": {
+  "auroc_identity": 0.8227,
+  "auroc_with_gene": 0.8364,
+  "gain": 0.0137
+ },
+ "d3_cold_pair": {
+  "auroc_identity": 0.7622,
+  "auroc_with_gene": 0.7255,
+  "gain": -0.0366
+ },
+ "d3_gate_gain_ge_0.01": false,
+ "d4_cold_cell": {
+  "auroc_identity": 0.7907,
+  "auroc_with_gene": 0.8041,
+  "gain": 0.0134
+ },
+ "d5_cold_drug": {
+  "n_drugs": 24,
+  "mean_auroc_identity": 0.7489,
+  "mean_auroc_with_gene": 0.7062,
+  "mean_gain": -0.0428,
+  "drugs_with_gain": 4,
+  "per_drug": {
+   "5-FU": [
+    0.837,
+    0.75
+   ],
+   "BORTEZOMIB": [
+    0.744,
+    0.719
+   ],
+   "CARBOPLATIN": [
+    0.769,
+    0.753
+   ],
+   "CYCLOPHOSPHAMIDE": [
+    0.594,
+    0.513
+   ],
+   "DASATINIB": [
+    0.584,
+    0.547
+   ],
+   "DEXAMETHASONE": [
+    0.652,
+    0.604
+   ],
+   "DOXORUBICIN": [
+    0.858,
+    0.816
+   ],
+   "ERLOTINIB": [
+    0.659,
+    0.612
+   ],
+   "ETOPOSIDE": [
+    0.835,
+    0.803
+   ],
+   "GEMCITABINE": [
+    0.832,
+    0.841
+   ],
+   "LAPATINIB": [
+    0.69,
+    0.638
+   ],
+   "METFORMIN": [
+    0.715,
+    0.726
+   ],
+   "METHOTREXATE": [
+    0.785,
+    0.785
+   ],
+   "MITOMYCINE": [
+    0.831,
+    0.801
+   ],
+   "OXALIPLATIN": [
+    0.774,
+    0.691
+   ],
+   "PACLITAXEL": [
+    0.874,
+    0.841
+   ],
+   "SN-38": [
+    0.822,
+    0.831
+   ],
+   "SORAFENIB": [
+    0.683,
+    0.525
+   ],
+   "SUNITINIB": [
+    0.789,
+    0.712
+   ],
+   "TEMOZOLOMIDE": [
+    0.651,
+    0.574
+   ],
+   "TOPOTECAN": [
+    0.8,
+    0.749
+   ],
+   "VINBLASTINE": [
+    0.73,
+    0.692
+   ],
+   "VINORELBINE": [
+    0.831,
+    0.796
+   ],
+   "ZOLINZA": [
+    0.637,
+    0.63
+   ]
+  }
+ },
+ "d6_ablation_cold_pair": {
+  "overlap": -0.0347,
+  "links": -0.0239,
+  "pathway": -0.0207,
+  "svd": -0.0099
+ },
+ "d7_shuffled_gene_features_cold_pair": {
+  "auroc_identity": 0.7622,
+  "auroc_with_gene": 0.6928,
+  "gain": -0.0694
+ },
+ "d7_gate_gain_le_0.01": true,
+ "d8_per_cell_auroc_cold_pair": {
+  "A2058": 0.717,
+  "A2780": 0.837,
+  "A375": 0.52,
+  "A427": 0.698,
+  "CAOV3": 0.77,
+  "COLO320DM": 0.566,
+  "DLD1": 0.685,
+  "EFM192B": 0.731,
+  "ES2"
