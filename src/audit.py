@@ -24,6 +24,5 @@ for _ in range(200):
     pick=rng.integers(0,len(ups),len(ups)); ii=np.concatenate([bypair[i] for i in pick])
     if len(set(y[ii]))>1: au.append(roc_auc_score(y[ii],g3[ii]))
 R['Q3_gene_only']=dict(auroc=float(roc_auc_score(y,g3)),lo=float(np.percentile(au,2.5)),hi=float(np.percentile(au,97.5))); print('Q3',R['Q3_gene_only'])
-R['reading']=dict(Q1_below_0.01=bool(R['Q1_HGB']['hi']<0.01),Q2_below_0.01=bool(R['Q2_LR']['hi']<0.01),Q3_signal_alone=bool(R['Q3_gene_only']['lo']>0.5)) if False else None
 R['reading']={'Q1_hi_below_0.01':bool(R['Q1_HGB']['hi']<0.01),'Q2_hi_below_0.01':bool(R['Q2_LR']['hi']<0.01),'Q3_lo_above_0.5':bool(R['Q3_gene_only']['lo']>0.5)}
 json.dump(R,open('results/audit.json','w'),indent=1); print(R['reading'],'done')
