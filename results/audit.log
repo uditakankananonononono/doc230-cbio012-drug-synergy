@@ -1,4 +1,4 @@
-  File "/home/sandbox/doc230-cbio012/src/audit.py", line 27
-    R['reading']=dict(Q1_below_0.01=bool(R['Q1_HGB']['hi']<0.01),Q2_below_0.01=bool(R['Q2_LR']['hi']<0.01),Q3_signal_alone=bool(R['Q3_gene_only']['lo']>0.5)) if False else None
-                      ^^^^^^^^^^^^^
-SyntaxError: invalid syntax. Perhaps you forgot a comma?
+Q1 {'point': -0.030323375686393428, 'lo': -0.05677985737824271, 'hi': -0.007197730789125056, 'auroc_id': 0.7691445978226237, 'auroc_gene': 0.7388212221362302}
+Q2 {'point': -0.005836332977523728, 'lo': -0.011516752686852566, 'hi': -0.001679107696127124, 'auroc_id': 0.7584844687156316, 'auroc_gene': 0.7526481357381078}
+Q3 {'auroc': 0.6653220114085986, 'lo': 0.6124447040492946, 'hi': 0.7182748170453186}
+{'Q1_hi_below_0.01': True, 'Q2_hi_below_0.01': True, 'Q3_lo_above_0.5': True} done
